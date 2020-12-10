@@ -52,3 +52,5 @@ def update_simc():
     if request.method == "GET":
         _ = subprocess.getoutput("pip uninstall simc -y")
         _ = subprocess.getoutput("pip install git+https://github.com/cimplec/sim-c")
+
+        return jsonify({"status": "sim-C upgraded successfully!"})
