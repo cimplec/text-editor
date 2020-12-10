@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+.code_textarea {
+    width: 48%;
+    height: 80%;
+    font-size: 110%;
+}
+
+#simc_code {
+    float: left;
+}
+
+#c_code {
+    float: right;
+}
+
+#header {
+    text-align: center;
+}
+
+#compile_code {
+    margin-top: 20px;
+    float: right;
+}

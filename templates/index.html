@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In-browser text editor for sim-C</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+
+    <body>
+        <h2 id="header">In-browser text editor for sim-C</h2>
+
+        <textarea class="code_textarea" id="simc_code"></textarea>
+        <textarea class="code_textarea" id="c_code"></textarea>
+    
+        <input type="button" id="compile_code" value="Compile Code">
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

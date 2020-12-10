@@ -1,0 +1,5 @@
+*.simc
+*.c
+.DS_Store
+__pycache__
+.vscode/*
