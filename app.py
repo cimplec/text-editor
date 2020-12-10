@@ -45,3 +45,10 @@ def compile():
             return jsonify({"status": "error", "message": "Unknown error!"})
 
         return jsonify({"status": "success", "message": c_code})
+
+@app.route("/update-simc", methods=['GET'])
+def update_simc():
+
+    if reques.method == "GET":
+        _ = subprocess.getoutput("pip uninstall simc -y")
+        _ = subprocess.getoutput("pip install git+https://github.com/cimplec/sim-c")
